@@ -21,10 +21,10 @@ export const botConfig = {
     // 3 = Stalking
     // 4 = Custom
     // 5 = Competing
-    activities: [
+    activities: [ Thinking about banning eztoxic 
       {
         name: "Custom Status", // required by Discord API, not shown in the client
-        state: "Playing CanyonSMP",     // this is what people actually see
+        state: "Maintenance soon? ",     // this is what people actually see
         type: 4,               // Custom
       },
     ],
@@ -39,7 +39,7 @@ export const botConfig = {
     owners: process.env.OWNER_IDS?.split(",").map((id) => id.trim()).filter(Boolean) || [],
 
     // Default wait time between command uses (in seconds).
-    defaultCooldown: 3,
+    defaultCooldown: 5,
 
     // If true, old commands are removed before re-registering.
     deleteCommands: false,
@@ -48,7 +48,7 @@ export const botConfig = {
     testGuildId: process.env.TEST_GUILD_ID,
 
     // When true (or MAINTENANCE_MODE=true), only bot owners can run commands.
-    maintenanceMode: process.env.MAINTENANCE_MODE === "true",
+    maintenanceMode: process.env.MAINTENANCE_MODE === "false",
 
     // Command prefix for text-based commands (e.g., "!" for "!ping").
     // Supports both slash commands and prefix commands.
@@ -161,9 +161,9 @@ export const botConfig = {
   economy: {
     currency: {
       // Currency display name.
-      name: "coins",
+      name: "SimplyBuck",
       // Plural display name.
-      namePlural: "coins",
+      namePlural: "SimplyBucks",
       // Currency symbol shown in balances.
       symbol: "$",
     },
@@ -175,11 +175,11 @@ export const botConfig = {
     baseBankCapacity: 100000,
 
     // Daily reward amount.
-    dailyAmount: 100,
+    dailyAmount: 10000,
 
     // Work command random payout range.
     workMin: 10,
-    workMax: 100,
+    workMax: 10000,
 
     // Beg command random payout range.
     begMin: 5,
@@ -194,11 +194,11 @@ export const botConfig = {
     },
 
     // Chance to succeed when robbing (0.4 = 40%).
-    robSuccessRate: 0.4,
+    robSuccessRate: 0.8,
 
     // Jail time after failed rob (milliseconds).
-    // 3600000 = 1 hour.
-    robFailJailTime: 3600000,
+    // 3600000 = 10 hour.
+    robFailJailTime: 36000000,
   },
 
   // =========================
@@ -434,13 +434,13 @@ export const botConfig = {
   // GENERIC BOT MESSAGES
   // =========================
   messages: {
-    noPermission: "You do not have permission to use this command.",
+    noPermission: "SimplySoccer Has not given you permission to use this command.",
     cooldownActive: "Please wait {time} before using this command again.",
-    errorOccurred: "An error occurred while executing this command.",
+    errorOccurred: "A SimplyProblem has happened while using this command.",
     missingPermissions:
       "I am missing required permissions to perform this action.",
-    commandDisabled: "This command has been disabled.",
-    maintenanceMode: "The bot is currently in maintenance mode.",
+    commandDisabled: "This command has been disabled By simplySoccer.",
+    maintenanceMode: "The bot is currently in maintenance mode Simply is fixing bugs .",
   },
 
   // =========================
