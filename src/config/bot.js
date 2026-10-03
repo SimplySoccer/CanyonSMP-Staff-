@@ -24,7 +24,7 @@ export const botConfig = {
     activities: [  
       {
         name: "Custom Status", // required by Discord API, not shown in the client
-        state: "Maintenance soon? ",     // this is what people actually see
+        state: "P1ayer has stike one ",     // this is what people actually see
         type: 4,               // Custom
       },
     ],
@@ -161,9 +161,9 @@ export const botConfig = {
   economy: {
     currency: {
       // Currency display name.
-      name: "SimplyBucks",
+      name: "PayBuck",
       // Plural display name.
-      namePlural: "SimplyBucks",
+      namePlural: "Paybucks",
       // Currency symbol shown in balances.
       symbol: "$&$&",
     },
@@ -175,7 +175,7 @@ export const botConfig = {
     baseBankCapacity: 100000,
 
     // Daily reward amount.
-    dailyAmount: 10000,
+    dailyAmount: 1000,
 
     // Work command random payout range.
     workMin: 10,
@@ -194,7 +194,7 @@ export const botConfig = {
     },
 
     // Chance to succeed when robbing (0.4 = 40%).
-    robSuccessRate: 0.8,
+    robSuccessRate: 0.01,
 
     // Jail time after failed rob (milliseconds).
     // 3600000 = 10 hour.
