@@ -1,15 +1,15 @@
 export const shopItems = [
     {
-        id: 'extra_work',
-        name: 'Extra Work Shift',
-        price: 5000,
-        description: 'Allows 1 extra use of the `/work` command.',
-        type: 'consumable',
+        id: 'SimplyCuh Role ',
+        name: 'SimplyCuh Gang',
+        price: 10000,
+        description: 'allows the person to become part of the simplycuh gang',
+        type: 'role',
         maxQuantity: 5,
 cooldown: 86400000,
         effect: {
-            type: 'command_boost',
-            command: 'work',
+            type: 'daily boost',
+           
             uses: 1
         }
     },
